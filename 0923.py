@@ -1,25 +1,21 @@
 def TimesTable(arg):
-	table=[]
+	table = []
 	for j in xrange(1,11):
-		table.append(str(arg) + " * "+ str(j) + " = "+str(arg*j))
+		table.append(str(arg)+"*"+str(j)+"="+str(arg*j))
 	return table
 
-re = TimesTable(2)
-ge = TimesTable(3)
-he = TimesTable(4)
-ke = TimesTable(5)
+# for i in range(0,10):
+	#print TimesTable(2)[i]
+re = TimesTable(2)	
+
 print re
 for r in re:
-	print r
-print ge
-for g in ge:
-	print g
-print he
-for h in he:
-	print h
-print ke
-for k in ke:
-	print k
+	print re
+input = 2
 
-for r in re:
-	print r+'   '+g+'   '+h+'   '+k
+timetable=[]
+for i in xrange(2,6):
+	for j in xrange(1,11):
+		timetable.append(str(i) + " * "+ str(j) + " = "+str(i*j) + "    " +str(i+4)+"*"+str(j)+"="+str((i+4)*j))
+for i in timetable:
+	print i
