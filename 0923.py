@@ -1,9 +1,9 @@
 
 number = 0
 
-if (number % 2) == 0:
-	print "Even"
+if (number == 0):
+	print "Zero"
 elif (number % 2) == 1:
 	print "Odd"
 else:
-	print "Zero"
+	print "Even"
