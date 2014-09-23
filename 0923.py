@@ -1,9 +1,8 @@
+def TimesTable(arg):
+	table=[]
+	for j in xrange(1,11):
+		table.append(str(arg) + " * "+ str(j) + " = "+str(arg*j))
+	return table
 
-number = 0
-
-if (number == 0):
-	print "Zero"
-elif (number % 2) == 1:
-	print "Odd"
-else:
-	print "Even"
+for i in range(0,10):
+	print TimesTable(2)[i]
